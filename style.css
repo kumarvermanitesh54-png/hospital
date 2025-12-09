@@ -362,9 +362,6 @@ input, select, textarea {
     font-size: 12px;
   }
 
-  .menu {
-    /* hide menu for mobile, or convert to dropdown */
-  }
 
   .main-content {
     padding: 15px;

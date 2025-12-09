@@ -362,10 +362,6 @@ input, select, textarea {
     font-size: 12px;
   }
 
-  .menu {
-    /* hide menu for mobile, or convert to dropdown */
-  }
-
   .main-content {
     padding: 15px;
   }
@@ -424,7 +420,7 @@ input, select, textarea {
     font-size: 11px;
   }
 
-  input, select, textarea {
+  input, select {
     font-size: 13px;
     padding: 6px;
   }
