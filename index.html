@@ -1,126 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctors Dashboard</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="container">
-        <!-- sidebar start -->
-
-
-        <aside class="sidebar">
-            <div class="user-profile">
-                <div class="avatar">
-                    <i class="fa-regular fa-user"></i>
-                </div>
-                <h3>Administrator</h3>
-                <p>admin@edoc.com</p>
-            </div>
-
-            <button class="btn-logout">Log out</button>
-
-            <nav class="menu">
-                <ul>
-                    <li class="active"><a href="../index.html"><i class="fa-solid fa-user-doctor"></i> Doctors</a></li>
-                    <li><a href="../sunam.html"><i class="fa-solid fa-bed-pulse"></i> Patients</a></li>
-                    <li><a href="../help.html"><i class="fa-solid fa-handshake-angle"></i>Help</a></li>
-                    <li><a href="../about.html"><i class="fa-solid fa-address-card"></i>About</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <!-- sidebar end -->
-
-         <!-- main contant star -->
-
-        <main class="main-content">
-            
-            <header class="top-bar">
-                <button class="btn-back"><i class="fa-solid fa-arrow-left"></i> Back</button>
-                
-                <div class="search-box">
-                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                    <input id="searchInput" style="background-color: aliceblue;" type="text" placeholder="Search your doctor name...">
-                </div>
-                
-                <button class="btn-search">Search</button>
-            </header>
-
-            <section class="action-area">
-                <h2>Add New Doctors</h2>
-                </section>
-
-            <section class="list-section">
-                <div class="list-header">
-                    <h3 id="doctorCount">All Doctor (1)</h3>
-                    <button class="btn-add-new">+ Add New</button>
-                </div>
-                      
-            </section>
-                <!-- patient form start -->
-
-
-            <form id="patientForm">
-                <input type="hidden" id="patientId">
-                
-                <div class="form-group">
-                    <label>Full Name</label>
-                    <input style="background-color:#5f98e7;"  type="text" id="fullName" required>
-                </div>
-
-                <div class="row">
-                    <div class="form-group half">
-                        <label>Email</label>
-                        <input type="email" id="email" required>
-                    </div>
-                    
-                    <div class="form-group half">
-                        <label>Specialties</label>
-                        <input style="background-color:#5f98e7;"  type="text" id="spec" required>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label>Contact</label>
-                    <input style="background-color:#5f98e7;"  type="text" id="contact" required>
-                </div>
-
-                <div class="modal-actions">
-                    <button type="button" id="saveBtn" class="btn btn-blue">Save</button>
-                    <button type="button" id="cancelBtn" class="btn btn-gray">Cancel</button>
-                </div>
-            </form>
-            <!-- patient form end -->
-
-            <!-- patient card start -->
-             <div class="patient-grid" id="doctorContainer">
-    
-    <div class="card" data-id="static-1">
-        <div class="card-header">
-            <h1>Dr.Nitesh kumar</h1>
-            <div class="card-actions">
-                <button class="edit-btn">Edit</button>
-                <button class="delete-btn">Delete</button>
-            </div>
-        </div>
-        <div class="card-body">
-            <p><strong>Email: </strong><span class="c-email">nitesh54@.com</span></p>
-            <p><strong>Specialties: </strong><span class="c-spec">Accident and emergency</span></p>
-            <p><strong>Contact: </strong><span class="c-contact">997412*****</span></p>
-        </div>
+    <div class="image">
+      <div class="para">
+      <p>Achhi Sehat Hamari Pehchaan.
+Your family deserves the best medical care.
+Emergency, OPD, Surgery, Pharmacy — sab ek hi jagah, bina deri.</p>
+  <h3>🔵 Appointment Book Karein</h3>
+   <div class="button">
+    <a href="../log.html"><button>Login</button></a>
+    <a href="../res.html"><button>Registration</button></a>
+   </div>
     </div>
-
-</div>
-           
-                <!-- patient card end -->
-
-        </main>
-        <!-- main contant end -->
-      </div>  
-      <script src="script.js"></script>
+    </div>
+    
 </body>
 </html>

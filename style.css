@@ -1,438 +1,64 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+*{
+  padding: 0%;
+  margin: 0%;
 }
 
-body {
-    background-color: #fcfcfc;
-    color: #333;
+.image{
+  height: 100vh;
+  width: 100vw;
+  background-image: url(doctor-5.png);
+  position: absolute;
+  background-size:cover;
+  background-attachment: fixed;
 }
-
-.container {
-    display: flex;
-    min-height: 100vh;
+.para{
+  background: rgba(225, 255, 255,0.2);
+  padding: 20px 40px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 150px;
+  
+  
 }
-
-/* --- Sidebar Styling --- */
-.sidebar {
-    width: 260px;
-    background-color: #fff;
-    border-right: 1px solid #e0e0e0;
-    padding: 30px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.para h3{
+  color: blue;
 }
-
-.user-profile {
-    text-align: center;
-    margin-bottom: 20px;
+.button button{
+border-radius: 7px;
+padding:10px 51px 12px 45px;
+background-color:green;
+cursor: pointer;
+font-size: 20px;
 }
-
-.avatar {
-    width: 60px;
-    height: 60px;
-    background-color: #eee;
-    border-radius: 50%;
-    margin: 0 auto 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    color: #555;
-    border: 1px solid #ccc;
+.button{
+  margin-top: 40px;
+  gap: 30px;
+  display:flex;
+  justify-content: center;
 }
-
-.user-profile h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
+.button button:hover{
+  background-color: greenyellow;
 }
-
-.user-profile p {
-    font-size: 13px;
-    color: #777;
+@media (max-width: 350px) {
+  .image{
+  height: 100vh;
+  width: 100vw;
+  background-image: url(doctor-6.jpg);
+  position: absolute;
+  background-size:cover;
+  background-attachment: fixed;
 }
-
-.btn-logout {
-    width: 100%;
-    padding: 10px;
-    background-color: #e0f0ff; /* Light blue */
-    color: #0066cc;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 600;
-    margin-bottom: 40px;
+.para{
+  font-size: 1em;
+  margin-top: 208px;
 }
-
-.menu {
-    width: 100%;
+.button button{
+  font-size: 1em;
+  padding: 8px 51px 12px 20px;
 }
-
-
-.menu ul {
-    list-style: none;
+.button{
+  gap: 7px;
 }
-
-.menu li {
-    margin-bottom: 10px;
 }
-
-.menu a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #666;
-    padding: 12px 15px;
-    border-radius: 4px;
-    font-size: 14px;
-    gap: 15px;
-}
-
-/* Active Menu Item (patient) */
-.menu li.active a {
-    color: #0066cc;
-    border-left: 4px solid #0066cc;
-    background-color: transparent; /* Or nice fade if desired */
-    padding-left: 11px; /* Adjust for border width */
-}
-
-.menu i {
-    width: 20px;
-    text-align: center;
-}
-
-/* --- Main Content Styling --- */
-.main-content {
-    flex: 1;
-    padding: 30px 40px;
-}
-
-/* Top Bar */
-.top-bar {
-    justify-content: space-evenly;
-    display:flex;
-    align-items: center;
-    margin-bottom: 40px;
-    gap: 15px;
-}
-
-.btn-back {
-    background-color: #e0f0ff;
-    border: none;
-    color: #0066cc;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.search-box {
-    flex: 1;
-    position: relative;
-    max-width: 600px;
-     border: 1px solid #fcfafa;
-     border-radius: 4px;
-}
-
-.search-box input {
-    width: 100%;
-    padding: 10px 90px 10px 40px;
-    outline: none;
-    color:black;
-}
-
-.search-icon {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #676464;
-}
-
-.btn-search {
-    background-color: #0066cc;
-    color: rgb(241, 227, 227);
-    border: none;
-    padding: 10px 25px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-/* Action Header */
-.action-area {
-    margin-bottom: 20px;
-}
-
-.action-area h2 {
-    font-weight: 500;
-    font-size: 18px;
-}
-
-/* List Section */
-.list-section {
-    background-color: #fff;
-    /* Optional: To make it look like a card if preferred, but image looks flat */
-}
-
-.list-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.list-header h3 {
-    font-size: 16px;
-    color: #333;
-}
-
-.btn-add-new {
-    background-color: #0066cc;
-    color: white;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-/* Table Styling */
-#patientForm input[type="text"] {
-    background-color: #1e1e1e;
-    border: 1px solid #333;
-    color: white;
-    border-radius: 4px;
-    flex-grow: 1;
-    max-width: 300px;
-}
-
-/* Buttons */
-.btn {
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.btn-blue {
-    background-color: #0080ff;
-    color: white;
-}
-
-.btn-blue:hover { background-color: #0056b3; }
-
-.btn-gray {
-    background-color: #444;
-    color: white;
-}
-
-/* Grid Layout for Cards */
-.patient-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    width: 100%;
-}
-
-/* Patient Card Styling */
-.card {
-    width: 100%;
-    background: #1699cc;
-background: linear-gradient(11deg,rgba(22, 153, 204, 1) 0%, rgba(17, 250, 36, 1) 100%, rgba(237, 221, 83, 1) 0%);
-    border: 1px solid #222;
-    border-radius: 8px;
-    padding: 20px;
-    position: relative;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-    margin-bottom: 30px;
-
-}
-
-
-.card-header {
-    display: flex;
-    justify-content:space-between;
-    align-items: flex-start;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #222;
-    padding-bottom:10px;
-}
-.card-body{
-  margin-bottom: 30px;
-}
-
-.card h1 {
-    color: #f5eded;
-    font-size: 18px;
-}
-
-.card-actions button {
-    background: none;
-    border: none;
-    color: #faf6f6;
-    cursor: pointer;
-    margin-left: 5px;
-    font-size: 12px;
-}
-
-.card-actions button:hover { color: #fff; }
-
-.card-body p {
-    font-size: 14px;
-    margin-bottom: 5px;
-    color: #2601fd;
-}
-
-.card-body strong {
-    color: #fafafa;
-}
-
-
-#patientForm{
-    display:none;
-    border: 1px solid black;
-    background-color: #555;
-    border-radius: 15px;
-    padding: 20px;
-}
-.form-group { margin-bottom: 15px; }
-.row { display: flex; gap: 10px; }
-.half { flex: 1; }
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 12px;
-    color: #aaa;
-}
-
-input, select, textarea {
-    width: 100%;
-    background-color: #5f98e7;
-    border: 1px solid #444;
-    color: white;
-    padding: 8px;
-    border-radius: 4px;
-}
-
-.modal-actions {
-    text-align: right;
-    margin-top: 20px;
-}
- /* mobile phone ke liye */
-
-@media (max-width:500px) {
-  .container {
-    flex-direction: column; /* stack sidebar and main content */
-  }
-
-  .sidebar {
-    width: 100%;
-    padding: 15px;
-    border-right: none;
-    border-bottom: 1px solid #e0e0e0;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .user-profile {
-    margin-bottom: 0;
-  }
-
-  .avatar {
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-  }
-
-  .user-profile h3 {
-    font-size: 14px;
-  }
-
-  .user-profile p {
-    font-size: 11px;
-  }
-
-  .btn-logout {
-    display: none;
-    margin-bottom: 0;
-    padding: 8px;
-    font-size: 12px;
-  }
-
-
-  .main-content {
-    padding: 15px;
-  }
-  .menu{
-      padding-left: 68px;
-  }
-
-  .top-bar {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .btn-back {
-    width: 100%;
-    justify-content: center;
-    padding: 8px;
-    font-size: 13px;
-  }
-
-  .search-box {
-    max-width: 100%;
-  }
-
-  .btn-search {
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  .list-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .btn-add-new {
-    width: 100%;
-    text-align: center;
-  }
-
-  .patient-grid {
-    grid-template-columns: 1fr; /* single column cards */
-  }
-
-  .card {
-    padding: 15px;
-    margin-bottom: 20px;
-  }
-
-  .card h1 {
-    font-size: 16px;
-  }
-
-  .card-body p {
-    font-size: 13px;
-  }
-
-  label {
-    font-size: 11px;
-  }
-
-  input, select, textarea {
-    font-size: 13px;
-    padding: 6px;
-  }
-}
-
