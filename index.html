@@ -44,7 +44,7 @@
                 
                 <div class="search-box">
                     <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                    <input style="background-color: aliceblue;" type="text" placeholder="Search your doctor name...">
+                    <input id="searchInput" style="background-color: aliceblue;" type="text" placeholder="Search your doctor name...">
                 </div>
                 
                 <button class="btn-search">Search</button>
@@ -56,7 +56,7 @@
 
             <section class="list-section">
                 <div class="list-header">
-                    <h3>All Doctor (1)</h3>
+                    <h3 id="doctorCount">All Doctor (1)</h3>
                     <button class="btn-add-new">+ Add New</button>
                 </div>
                       
@@ -75,12 +75,12 @@
                 <div class="row">
                     <div class="form-group half">
                         <label>Email</label>
-                        <input type="email" id="age" required>
+                        <input type="email" id="email" required>
                     </div>
                     
                     <div class="form-group half">
                         <label>Specialties</label>
-                        <input style="background-color:#5f98e7;"  type="text" id="blood" required>
+                        <input style="background-color:#5f98e7;"  type="text" id="spec" required>
                     </div>
                 </div>
 
@@ -97,71 +97,30 @@
             <!-- patient form end -->
 
             <!-- patient card start -->
-             <div class="card">
-                <div class="card-header">
-                    <h1>Dr.Nitesh kumar</h1>
-                    <div class="card-actions">
-                        <button>Edit</button>
-                        <button>Delete</button>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <p><strong>Email</strong>nitesh54@.com</p>
-                    <p><strong>Specialties</strong>Accident and emergency</p>
-                    <p><strong>Contant:</strong>997412*****</p>
-                    </div>
-             </div>
-                  
-                <div class="card">
-                <div class="card-header">
-                    <h1>Dr.Nitesh kumar</h1>
-                    <div class="card-actions">
-                        <button>Edit</button>
-                        <button>Delete</button>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <p><strong>Email</strong>nitesh54@.com</p>
-                    <p><strong>Specialties</strong>Accident and emergency</p>
-                    <p><strong>Contant:</strong>997412*****</p>
-                    </div>
-                </div>
-                
-                <div class="card">
-                <div class="card-header">
-                    <h1>Dr.Nitesh kumar</h1>
-                    <div class="card-actions">
-                        <button>Edit</button>
-                        <button>Delete</button>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <p><strong>Email</strong>nitesh54@.com</p>
-                    <p><strong>Specialties</strong>Accident and emergency</p>
-                    <p><strong>Contant:</strong>997412*****</p>
-                    </div>
-                </div>
-                 
-                <div class="card">
-                <div class="card-header">
-                    <h1>Dr.Nitesh kumar</h1>
-                    <div class="card-actions">
-                        <button>Edit</button>
-                        <button>Delete</button>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <p><strong>Email</strong>nitesh54@.com</p>
-                    <p><strong>Specialties</strong>Accident and emergency</p>
-                    <p><strong>Contant:</strong>997412*****</p>
-                    </div>
-                </div>
-           </div>
+             <div class="patient-grid" id="doctorContainer">
+    
+    <div class="card" data-id="static-1">
+        <div class="card-header">
+            <h1>Dr.Nitesh kumar</h1>
+            <div class="card-actions">
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+            </div>
+        </div>
+        <div class="card-body">
+            <p><strong>Email: </strong><span class="c-email">nitesh54@.com</span></p>
+            <p><strong>Specialties: </strong><span class="c-spec">Accident and emergency</span></p>
+            <p><strong>Contact: </strong><span class="c-contact">997412*****</span></p>
+        </div>
+    </div>
+
+</div>
            
                 <!-- patient card end -->
 
         </main>
         <!-- main contant end -->
       </div>  
+      <script src="script.js"></script>
 </body>
 </html>

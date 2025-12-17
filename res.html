@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="hi">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register — Doctor Theme</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="res.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="left-inner">
+        <!-- यहाँ doctor image डालें -->
+        <div class="doctor-frame">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/portrait-of-a-happy-young-doctor-in-his-clinic-royalty-free-image-1661432441.jpg?crop=0.66698xw:1xh;center,top&resize=1200:*"
+            alt="Doctor image">
+        </div>
+
+        <!-- Optional: छोटा tagline -->
+        <div class="tagline">
+          <h2>Doctor</h2>
+          <p>Trusted Healthcare</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="form-wrap">
+        <h1>REGISTER</h1>
+        <p class="sub">IT'S COMPLETELY FREE</p>
+
+        <form>
+          <label>NAME
+            <input type="text" placeholder="Full name" required>
+          </label>
+
+          <label>USERNAME
+            <input type="text" placeholder="Username" required>
+          </label>
+
+          <label>EMAIL
+            <input type="email" placeholder="Email address" required>
+          </label>
+
+          <label>PASSWORD
+            <input type="password" placeholder="Password" required>
+          </label>
+
+          <label>CONFIRM PASSWORD
+            <input type="password" placeholder="Confirm password" required>
+          </label>
+
+          <div class="checkbox">
+            <input type="checkbox" id="agree" checked>
+            <label for="agree">I agree to the terms and conditions.</label>
+          </div>
+
+          <button id="resbutton" type="submit" class="btn">CREATE ACCOUNT</button>
+
+          <p class="small">Already have an account? <a href="../log.html">Sign in</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="res.js"></script>
+</body>
+
+</html>

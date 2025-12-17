@@ -149,8 +149,12 @@ body {
   .user-profile p {
     font-size: 11px;
   }
+  .menu{
+      padding-left: 68px;
+  }
 
   .btn-logout {
+    display: none;
     margin-bottom: 0;
     padding: 8px;
     font-size: 12px;

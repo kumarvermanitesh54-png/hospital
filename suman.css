@@ -70,6 +70,7 @@ body {
 
 .menu {
     width: 100%;
+  
 }
 
 
@@ -243,7 +244,7 @@ body {
 
 /* Patient Card Styling */
 .card {
-    display: non;
+    display:block;
     background-color: #519dc4;
     border: 1px solid #222;
     border-radius: 8px;
@@ -296,7 +297,11 @@ body {
 }
 
 #patientForm{
-    display: none;
+    display:none;
+    border: 1px solid black;
+    background-color: #555;
+    border-radius: 15px;
+    padding: 20px;
 }
 .form-group { margin-bottom: 15px; }
 .row { display: flex; gap: 10px; }
@@ -355,8 +360,12 @@ input, select, textarea {
   .user-profile p {
     font-size: 11px;
   }
+  .menu{
+      padding-left: 68px;
+  }
 
   .btn-logout {
+    display: none;
     margin-bottom: 0;
     padding: 8px;
     font-size: 12px;

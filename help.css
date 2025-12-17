@@ -163,12 +163,16 @@ body {
   .user-profile h3 {
     font-size: 14px;
   }
+  .menu{
+      padding-left: 68px;
+  }
 
   .user-profile p {
     font-size: 11px;
   }
 
   .btn-logout {
+    display: none;
     margin-bottom: 0;
     padding: 8px;
     font-size: 12px;
